@@ -79,6 +79,7 @@ export class CarsController {
 
             // @ts-ignore
             form.reset()
+            // @ts-ignore
             bootstrap.Collapse.getOrCreateInstance('#carFormCollapse').hide()
         } catch (error) {
             Pop.error(error.message)
