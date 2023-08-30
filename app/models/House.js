@@ -48,9 +48,14 @@ export class House {
             </div>`
     }
 
+    // <div class="my-3 d-flex justify-content-between">
+    // ${this.ComputeEditButton}
+    // ${this.ComputeDeleteButton}
+    // </div>
 
+    static createHouseForm() {
+        return `
+        
+        `
+    }
 }
-            // <div class="my-3 d-flex justify-content-between">
-            // ${this.ComputeEditButton}
-            // ${this.ComputeDeleteButton}
-            // </div>

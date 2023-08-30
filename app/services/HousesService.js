@@ -16,6 +16,14 @@ class HousesService {
         console.log(response.data);
         AppState.houses = mappedHouses
     }
+    // post and push - this one is NOT _sandboxApi, just api
+    async createHouse(formData) {
+        const reply = await api.post('api/houses', formData)
+
+        const newHouse = new House(reply.data)
+        AppState.houses.push(newHouse)
+        AppState.emit('houses')
+    }
 }
 
 
